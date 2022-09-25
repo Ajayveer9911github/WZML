@@ -395,7 +395,7 @@ class GoogleDriveHelper:
                     url_path = rquote(f'{meta.get("name")}', safe='')
                     url = f'{INDEX_URL}/{url_path}/'
                     url = short_url(url)
-                    buttons.buildbutton("⚡ Index Link", url)
+                    buttons.buildbutton("⚡ Download Link", url)
             else:
                 file = self.__copyFile(meta.get('id'), parent_id)
                 if EMOJI_THEME is True:
